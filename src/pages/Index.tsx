@@ -109,7 +109,7 @@ const Index = () => {
           </CardContent>
         </Card>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-8">
+        <div className="grid lg:grid-cols-1 gap-8 mb-8">
           {/* Список игроков */}
           <Card className="bg-slate-800/50 border-green-600/30 backdrop-blur-sm">
             <CardHeader>
