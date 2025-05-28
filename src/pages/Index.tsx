@@ -161,7 +161,7 @@ const Index = () => {
                 </div>
                 <div className="text-center p-4 bg-slate-700/30 rounded-lg">
                   <div className="text-2xl font-bold text-green-400">
-                    {serverStats.dailyPeak}
+                    {serverStats.peakDay}
                   </div>
                   <div className="text-sm text-gray-400">Пик дня</div>
                 </div>
