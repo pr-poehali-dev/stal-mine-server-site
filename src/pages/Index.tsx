@@ -23,10 +23,8 @@ const Index = () => {
   ];
 
   const serverStats = {
-    totalPlayers: 2847,
-    dailyPeak: 89,
-    artifacts: 156,
-    anomalies: 23,
+    totalStalkers: 1247,
+    peakToday: 892,
   };
 
   const getFactionColor = (faction: string) => {
@@ -65,21 +63,23 @@ const Index = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-400">
-                  {serverData.players}
+                <div className="text-2xl font-bold text-purple-400">
+                  {serverStats.totalStalkers}
                 </div>
-                <div className="text-sm text-gray-400">Сталкеров онлайн</div>
+                <div className="text-sm text-gray-400">Всего сталкеров</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-400">
-                  {serverData.maxPlayers}
+                <div className="text-2xl font-bold text-purple-400">
+                  {serverStats.peakToday}
                 </div>
-                <div className="text-sm text-gray-400">Максимум</div>
+                <div className="text-sm text-gray-400">Пик дня</div>
               </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="text-center">
-                <div className="text-lg font-bold text-amber-400">
+                <div className="text-lg font-bold text-purple-400">
                   {serverData.version}
                 </div>
                 <div className="text-sm text-gray-400">Версия</div>
